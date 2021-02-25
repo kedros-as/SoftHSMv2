@@ -12197,7 +12197,7 @@ CK_RV SoftHSM::MechParamCheckRSAPKCSOAEP(CK_MECHANISM_PTR pMechanism)
 	}
 	if (params->mgf != CKG_MGF1_SHA1 && params->mgf != CKG_MGF1_SHA256 )
 	{
-		ERROR_MSG("mgf must be CKG_MGF1_SHA1 or SHA256");
+		ERROR_MSG("mgf must be CKG_MGF1_SHA1 or CKG_MGF1_SHA256");
 		return CKR_ARGUMENTS_BAD;
 	}
 	if (params->source != CKZ_DATA_SPECIFIED)

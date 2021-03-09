@@ -12190,14 +12190,14 @@ CK_RV SoftHSM::MechParamCheckRSAPKCSOAEP(CK_MECHANISM_PTR pMechanism)
 	}
 
 	CK_RSA_PKCS_OAEP_PARAMS_PTR params = (CK_RSA_PKCS_OAEP_PARAMS_PTR)pMechanism->pParameter;
-	if (params->hashAlg != CKM_SHA_1)
+	if (params->hashAlg != CKM_SHA_1 && params->hashAlg != CKM_SHA256 )
 	{
-		ERROR_MSG("hashAlg must be CKM_SHA_1");
+		ERROR_MSG("hashAlg must be CKM_SHA_1 or CKM_SHA256");
 		return CKR_ARGUMENTS_BAD;
 	}
-	if (params->mgf != CKG_MGF1_SHA1)
+	if (params->mgf != CKG_MGF1_SHA1 && params->mgf != CKG_MGF1_SHA256 )
 	{
-		ERROR_MSG("mgf must be CKG_MGF1_SHA1");
+		ERROR_MSG("mgf must be CKG_MGF1_SHA1 or CKG_MGF1_SHA256");
 		return CKR_ARGUMENTS_BAD;
 	}
 	if (params->source != CKZ_DATA_SPECIFIED)

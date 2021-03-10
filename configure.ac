@@ -8,8 +8,8 @@
 
 define([SOFTHSM_VERSION_MAJOR], [2])
 define([SOFTHSM_VERSION_MINOR], [5])
-define([SOFTHSM_VERSION_FIX], [0])
-define([PACKAGE_SUFFIX], [])
+define([SOFTHSM_VERSION_FIX], [1])
+define([PACKAGE_SUFFIX], [kdrRC1])
 
 # Library version
 
@@ -20,7 +20,7 @@ define([PACKAGE_SUFFIX], [])
 
 define([SOFTHSM_VERSION_CURRENT], [2])
 define([SOFTHSM_VERSION_AGE], [1])
-define([SOFTHSM_VERSION_REVISION], [5])
+define([SOFTHSM_VERSION_REVISION], [6])
 
 ##################
 #                #

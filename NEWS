@@ -1,5 +1,10 @@
 NEWS for SoftHSM -- History of user visible changes
 
+SoftHSM 2.5.1-kdrRC10 - 2021-03-10
+
+*  [F] [MSTS-454] add support for hash SHA256 and generation function MGF1_SHA256 for CKM_RSA_PKCS_OAEP mechanism
+*  fixed test for new allowed OAEP parameter values and clearer error message
+
 SoftHSM 2.5.0 - 2018-09-24
 
 * Issue #323: Support for EDDSA with vendor defined mechanisms.
